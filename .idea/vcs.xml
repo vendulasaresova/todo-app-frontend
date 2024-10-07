@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../Interview" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../React-Typescript-Select-Component" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../decide" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../easymind" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../nzis-open.uzis.cz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../todo-be" vcs="Git" />
+  </component>
+</project>
