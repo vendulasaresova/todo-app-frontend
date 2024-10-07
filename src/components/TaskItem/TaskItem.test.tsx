@@ -133,7 +133,7 @@ describe('TaskItem', () => {
 
     const inputField = screen.getByDisplayValue('Test task');
     fireEvent.change(inputField, { target: { value: 'Updated task' } });
-    fireEvent.keyPress(inputField, { key: 'Enter', charCode: 13 });
+    fireEvent.keyDown(inputField, { key: 'Enter', charCode: 13 });
 
     expect(onUpdateTask).toHaveBeenCalledWith(task.id, 'Updated task');
   });

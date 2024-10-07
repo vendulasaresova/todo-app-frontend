@@ -29,7 +29,7 @@ export const TaskItem: FC<ITaskPresentationalProps> = ({
 }) => {
   const editingTaskTextRef = useRef<HTMLInputElement | null>(null);
 
-  const handleKeyPress = (e: React.KeyboardEvent) => {
+  const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && editingTaskTextRef.current) {
       onUpdateTask(task.id, editingTaskTextRef.current.value);
     }
@@ -51,7 +51,7 @@ export const TaskItem: FC<ITaskPresentationalProps> = ({
               onUpdateTask(task.id, editingTaskTextRef.current.value);
             }
           }}
-          onKeyPress={handleKeyPress}
+          onKeyDown={handleKeyDown}
           variant="standard"
           size="small"
           defaultValue={task.text}
