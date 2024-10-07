@@ -50,6 +50,6 @@ You can now view the Task Todo app in your browser.
 
 ### Backend API Configuration
 
-If the backend API is running on a different port or URL, ensure that the frontend is configured to communicate with the correct API endpoint. You can update the API URL inside your frontend codebase wherever the API calls are made.
+If the backend API is running on a different port or URL, ensure that the frontend is configured to communicate with the correct API endpoint. You can update the API URL inside your frontend codebase in _src/api/taskApi.ts_ file.
 
 ## Thanks for using the application!
