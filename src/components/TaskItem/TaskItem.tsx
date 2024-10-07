@@ -1,6 +1,6 @@
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
-import { IconButton, Box, Checkbox } from '@mui/material';
+import { IconButton, Box, Checkbox, FormControlLabel } from '@mui/material';
 import React, { FC, useRef } from 'react';
 import {
   StyledListItem,
@@ -41,6 +41,7 @@ export const TaskItem: FC<ITaskPresentationalProps> = ({
         checked={task.completed}
         color="success"
         onChange={() => onCompleteToggle(task)}
+        aria-label={`Mark task as ${task.completed ? 'uncompleted' : 'completed'}`}
       />
       {editingTaskId === task.id ? (
         <StyledTextField
@@ -55,6 +56,7 @@ export const TaskItem: FC<ITaskPresentationalProps> = ({
           size="small"
           defaultValue={task.text}
           autoFocus
+          label="Edit task"
         />
       ) : (
         <StyledListItemText

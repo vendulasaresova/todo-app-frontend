@@ -19,7 +19,11 @@ export const SelectTasksControls: FC<ISelectTasksControlsProps> = ({
   return (
     <SelectMenu>
       <Box display="flex" flexDirection="row" alignItems="center">
-        <Checkbox checked={isChecked} onChange={handleCheckboxChange} />
+        <Checkbox
+          checked={isChecked}
+          onChange={handleCheckboxChange}
+          aria-label={`Mark all task as ${isChecked ? 'incomplete' : 'complete'}`}
+        />
         <Typography variant="body1">
           Mark all tasks in the view as {isChecked ? 'incomplete' : 'complete'}
         </Typography>
