@@ -1,6 +1,6 @@
 import DeleteIcon from '@mui/icons-material/Delete';
 import EditIcon from '@mui/icons-material/Edit';
-import { IconButton, Box, Checkbox, FormControlLabel } from '@mui/material';
+import { IconButton, Box, Checkbox } from '@mui/material';
 import React, { FC, useRef } from 'react';
 import {
   StyledListItem,
