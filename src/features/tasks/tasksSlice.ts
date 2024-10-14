@@ -25,14 +25,7 @@ const initialState: TasksState = {
 const tasksSlice = createSlice({
   name: 'tasks',
   initialState,
-  reducers: {
-    toggleTask: (state, action: PayloadAction<string>) => {
-      const task = state.tasks.find((task) => task.id === action.payload);
-      if (task) {
-        task.completed = !task.completed;
-      }
-    },
-  },
+  reducers: {},
   extraReducers: (builder) => {
     builder.addCase(
       fetchTasks.fulfilled,
@@ -115,5 +108,4 @@ const tasksSlice = createSlice({
   },
 });
 
-export const { toggleTask } = tasksSlice.actions;
 export default tasksSlice.reducer;
